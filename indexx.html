@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Diabetes Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden;}
+
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #955ae2a8;
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128-+138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	
+}
+.login { 
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -200px ;
+	width:400px;
+	height:100%;
+}
+
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: #ebe1e14d;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #07040a;
+	text-shadow: 1px 1px 1px rgba(2, 0, 0, 0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(59, 8, 240, 0.4), 0 1px 1px rgba(59, 8, 240, 0.4); }
+
+
+</style>
+
+
+  
+</head>
+
+
+
+
+
+<body>
+ <div class="login">
+	<h1> Diabetes Prediction </h1>
+     
+    <form action="{{ url_for('predict')}}"method="post">
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0 for male"><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) "><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) "><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) "><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) "><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) "><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function "><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) "><br>
+        <!-- <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button> -->
+		<a class="btn btn-primary btn-block btn-large" href="result.html">Predict </a>
+    </form>
+
+ </div>
+ <!-- <a class="btn btn-primary btn-block btn-large" href="result.html">Predict </a> -->
+</body>
+</html>
+
+
+
+
+    
+</html>
