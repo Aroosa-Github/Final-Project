@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Diabetes </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap & CSS Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+  <!-- <link href="3dimage.html" rel="import" > -->
+
+
+</head>
+
+<body>
+
+
+    <!-- <div w3-include-html="img.html"></div> -->
+  
+
+    
+  <div class="container">
+
+    <h1 align = "center" = >3D Scatter Plot</h1>
+    <br></br>
+ <h3>What is a 3D scatter plot?</h3>
+<p>
+    Generally 3D scatter plot is created by using ax. scatter3D() the function of the matplotlib library which accepts a data sets 
+    of X, Y and Z to create the plot while the rest of the attributes of the function are the same as that of two dimensional scatter plot.
+
+  </p>
+
+  <p>
+    To have a probabilistic analysis of our data,a simple approach might be just to use the top correlated variables and investigate them further.
+    
+    In our case we have selected Glucose, BMI and Age.
+    
+    'Pregnancies' are not included because we are not paying attention to gender.
+    <br></br>
+    The figure shows a 3D scatter plot for diabetic and non-diabtic patients.The red dots indicate non diabetic individuals
+    whereas the blue dots indicates diabetic individuals. It's hard to seperate the dots even if you look from any angle.
+    In this figure x= glucose, y = BMI and z = age.
+  </p>
+ <div>
+<object type="text/html" data="img.html" width=1000 height="800"></object>
+</div>
+    </body>
+    </html>
+    <!-- <script type = "image3D">
+    $(function () {
+        $(".image").load("img.html");
+    })
+
+    </script> -->
